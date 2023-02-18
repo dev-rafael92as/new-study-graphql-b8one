@@ -6,6 +6,7 @@ export default {
         LINK_COLOR: '#2E046D',
         BUTTON_COLOR: '#2E046D',
         TEXT_COLOR: '#000000',
+        TEXT_WHITE: '#FFFFFF',
 
         PLACEHOLDER_COLOR: 'rgba(0, 0, 0, 0.7)',
         TEXT_LOGO: '#52B45B'
