@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
     width: 100%;
     background: ${({ theme }) => theme.FONTS.DARK_BLUE};
     height: 64px;
