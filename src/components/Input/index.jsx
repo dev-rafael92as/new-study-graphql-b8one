@@ -8,10 +8,13 @@ export const Input = ({icon, label, type, id, placeholder, ...rest}) => {
   const [ changeTypeInput, setChangeTypeInput ] = useState(true)
 
   return (
-    <Container {...rest}>
+    <Container>
+        <div className='container-label'>
         <label htmlFor={id}>{label}</label>
+        {type === 'password' && <a className='forget-password' href='#'>Esqueci minha senha</a>}
+        </div>
         <div className='wrapper-input'>
-            <input type={changeTypeInput ? type : "text"} id={id} placeholder={placeholder}></input>
+            <input {...rest} type={changeTypeInput ? type : "text"} id={id} placeholder={placeholder}></input>
             {icon && 
             <div onClick={() => {
                 setShowPassword(!showPassword)

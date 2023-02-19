@@ -3,14 +3,29 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
 
-    label {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: -0.005em;
+    .container-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        color: ${({ theme }) => theme.FONTS.TEXT_COLOR};
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.005em;
+    
+            color: ${({ theme }) => theme.FONTS.TEXT_COLOR};
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.005em;
+            color: ${({ theme }) => theme.FONTS.LINK_COLOR};
+        }
     }
+
 
     .wrapper-input {
         margin-top: 8px;
