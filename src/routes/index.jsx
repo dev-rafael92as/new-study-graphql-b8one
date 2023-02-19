@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { DashboardPage } from '../pages/DashboardPage'
-import { SignIn } from '../pages/SignIn'
+import { AppRoutes } from './app.routes'
+import { AuthRoutes } from './auth.routes'
 
 export const Routes = () => {
     const auth = true
 
   return (
     <BrowserRouter>
-     {auth ? <SignIn /> : <DashboardPage />} 
+     {auth ? <AuthRoutes /> : <AppRoutes />} 
     </BrowserRouter>
   )
 }
