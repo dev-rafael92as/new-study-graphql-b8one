@@ -10,6 +10,7 @@ export default {
         BORDER_INPUT: '#87848F',
 
         PLACEHOLDER_COLOR: 'rgba(0, 0, 0, 0.7)',
-        TEXT_LOGO: '#52B45B'
+        TEXT_LOGO: '#52B45B',
+        LINE_BORDER: '#E5E5E5'
     }
 }
